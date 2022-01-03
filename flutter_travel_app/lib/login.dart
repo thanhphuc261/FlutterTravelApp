@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_travel_app/src.dart';
 
 class LogPage extends StatefulWidget {
   const LogPage({Key? key}) : super(key: key);
@@ -98,7 +99,14 @@ class _LogPageState extends State<LogPage> {
                 textStyle: const TextStyle(fontSize: 25),
                 backgroundColor: Colors.lightBlue.shade300,
               ),
-              onPressed: () {},
+              // Within the `FirstScreen` Widget
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyApp()),
+                );
+              },
+
               child: Text(
                 "Login",
                 style: TextStyle(color: Colors.white, fontSize: 18),
