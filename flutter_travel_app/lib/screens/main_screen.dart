@@ -30,6 +30,7 @@ class _MainScreenState extends State<MainScreen> {
             barIcon(icon: Icons.favorite, page: 1),
             barIcon(icon: Icons.mode_comment, page: 2, badge: true),
             barIcon(icon: Icons.person, page: 3),
+            barIcon(icon: Icons.map_sharp, page: 4),
             SizedBox(width: 7.0),
           ],
         ),

@@ -1,6 +1,8 @@
 // ignore_for_file: unnecessary_null_comparison
 
 import 'package:flutter/material.dart';
+import 'package:flutter_travel_app/ggmaps.dart';
+import 'package:flutter_travel_app/maps.dart';
 import 'package:flutter_travel_app/util/places.dart';
 import 'package:flutter_travel_app/widgets/horizontal_place_item.dart';
 import 'package:flutter_travel_app/widgets/icon_badge.dart';
@@ -17,9 +19,14 @@ class Home extends StatelessWidget {
             icon: IconBadge(
               size: 24,
               color: Colors.black,
-              icon: Icons.notifications_none,
+              icon: Icons.map_rounded,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GoogleMaps()),
+              );
+            },
           ),
         ],
       ),
