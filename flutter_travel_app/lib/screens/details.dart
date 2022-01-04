@@ -17,7 +17,8 @@ class Details extends StatelessWidget {
           IconButton(
             icon: IconBadge(
               icon: Icons.notifications_none,
-              color: Colors.blue,
+              
+              color: Colors.black,
               size: 24,
               key: null,
             ),

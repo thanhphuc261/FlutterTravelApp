@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(20.0),
             child: Text(
-              "Where are you \ngoing?",
+              "Bạn muốn đến đâu?",
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.w600,

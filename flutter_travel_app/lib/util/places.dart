@@ -2,9 +2,9 @@ List places = [
   {
     "name": "Hotel Dolah Amet & Suites",
     "img": "images/1.jpeg",
-    "price": r"$100/night",
+    "price": r"$100000000/night",
     "location": "London, England",
-    "details": "Pellentesque in ipsum id orci porta dapibus. "
+    "details": "Sua noi duung trong file nay, giong nhu JSON "
         "Nulla porttitor accumsan tincidunt. Donec rutrum "
         "congue leo eget malesuada. "
         "\n\nPraesent sapien massa, convallis a pellentesque "
