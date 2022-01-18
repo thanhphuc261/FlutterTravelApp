@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_travel_app/chat/chat_scr.dart';
+import 'package:flutter_travel_app/ggmaps.dart';
 import 'package:flutter_travel_app/screens/home.dart';
 import 'package:flutter_travel_app/widgets/icon_badge.dart';
 
@@ -15,11 +17,16 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
-        physics: NeverScrollableScrollPhysics(),
-        controller: _pageController,
-        onPageChanged: onPageChanged,
-        children: List.generate(4, (index) => Home()),
-      ),
+          physics: NeverScrollableScrollPhysics(),
+          controller: _pageController,
+          onPageChanged: onPageChanged,
+          children: [
+            Home(),
+            GoogleMaps(),
+            Chats(),
+          ] //List.generate(4, (index) => Home()),
+
+          ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           mainAxisSize: MainAxisSize.max,
@@ -27,10 +34,9 @@ class _MainScreenState extends State<MainScreen> {
           children: <Widget>[
             SizedBox(width: 7.0),
             barIcon(icon: Icons.home, page: 0),
-            barIcon(icon: Icons.favorite, page: 1),
-            barIcon(icon: Icons.mode_comment, page: 2, badge: true),
+            barIcon(icon: Icons.map_sharp, page: 1),
+            barIcon(icon: Icons.mode_comment, page: 2), //, badge: true),
             barIcon(icon: Icons.person, page: 3),
-            barIcon(icon: Icons.map_sharp, page: 4),
             SizedBox(width: 7.0),
           ],
         ),

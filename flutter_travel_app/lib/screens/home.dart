@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_app/ggmaps.dart';
-import 'package:flutter_travel_app/maps.dart';
 import 'package:flutter_travel_app/util/places.dart';
 import 'package:flutter_travel_app/widgets/horizontal_place_item.dart';
 import 'package:flutter_travel_app/widgets/icon_badge.dart';

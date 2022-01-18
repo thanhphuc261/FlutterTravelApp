@@ -32,16 +32,17 @@ class _MyAppState extends State<GoogleMaps> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Bản đồ'),
-          backgroundColor: Colors.green[700],
+          backgroundColor: Colors.blue[700],
         ),
         body: GoogleMap(
           onMapCreated: _onMapCreated,
           initialCameraPosition: const CameraPosition(
-            target: LatLng(0, 0),
-            zoom: 2,
+            target: LatLng(10.771596, 106.701481),
+            zoom: 17,
           ),
           markers: _markers.values.toSet(),
         ),
