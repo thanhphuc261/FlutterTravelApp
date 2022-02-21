@@ -1,7 +1,7 @@
 // ignore_for_file: unnecessary_null_comparison
 
 import 'package:flutter/material.dart';
-import 'package:flutter_travel_app/ggmaps.dart';
+
 import 'package:flutter_travel_app/maps.dart';
 import 'package:flutter_travel_app/util/places.dart';
 import 'package:flutter_travel_app/widgets/horizontal_place_item.dart';
@@ -21,12 +21,7 @@ class Home extends StatelessWidget {
               color: Colors.black,
               icon: Icons.map_rounded,
             ),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => GoogleMaps()),
-              );
-            },
+            onPressed: () {},
           ),
         ],
       ),
